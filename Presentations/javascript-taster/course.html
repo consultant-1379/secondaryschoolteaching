@@ -1,0 +1,620 @@
+<!--
+This file was automatically generated from course.md on Fri Feb 23 2018 14:08:55 GMT+0000 (GMT Standard Time). If you need to make changes, edit course.md directly instead of this file.
+-->
+
+<!DOCTYPE html><html>
+<head><link rel="stylesheet" href="https://mozillathimblelivepreview.net/bramble/production/dist/thirdparty/github-markdown.css">
+<style>
+  .markdown-body {
+    min-width: 200px;
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+</style></head>
+<body><article class="markdown-body">
+<p>class: center, middle, inverse</p>
+<h1 id="javascript-a-taster-">Javascript (A Taster)</h1>
+<hr>
+<h2 id="what-we-have-done-so-far-">What we have done so far ...</h2>
+<p><img src="./images/html.png" alt="so-far"></p>
+<hr>
+<h2 id="what-is-a-programming-language-">What is a programming language ?</h2>
+<p><img src="./images/computer-program.png" alt="programming language"></p>
+<ul>
+<li>A programming language is a bridge between human and computers</li>
+<li>A developer breaks a task down into a list of steps written in Javascript or some other language for the computer to follow</li>
+<li>The computer then translates those steps into machine code and uses that to carry out the task</li>
+</ul>
+<hr>
+<h2 id="javascript">JavaScript</h2>
+<ul>
+<li>JavaScript (JS) is the most popular programming language in the world</li>
+<li>We can use it to make our web pages more interesting</li>
+<li><p>For example:</p>
+<ul>
+<li>We can use it to make things move around the page when a button is clicked</li>
+<li>We can take inputs from visitors to our web page, do calculations and give back a result</li>
+<li>We can hide and show things on the page</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li><p>The following slides are intended to a <em>brief</em> overview of the programming language JavaScript</p>
+</li>
+<li><p>It is a very powerful programming language originally developed in 1995 to run in web browsers.</p>
+</li>
+<li><p>It is also used as a server programming language and is also popular on devices such as the 
+Raspberry PI and BBC Microbit</p>
+</li>
+<li><p>JavaScript is also called ECMAScript (created to standardize JavaScript). We will be using
+some features from the current standard ES6.</p>
+</li>
+</ul>
+<hr>
+<h2 id="caveat">Caveat</h2>
+<ul>
+<li>There is plenty missing from this presentation.</li>
+<li>Explanations are intended to give a starting point.</li>
+<li>There is an expectation that you will use other resources when learning.</li>
+</ul>
+<h3 id="resources-examples-">Resources (Examples)</h3>
+<ul>
+<li><a href="https://www.w3schools.com/">w3Schools</a></li>
+<li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+<li><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+</ul>
+<hr>
+<h2 id="values">Values</h2>
+<p>The simplest construct in JavaScript is a <em>value</em></p>
+<pre><code class="lang-JavaScript">3
+</code></pre>
+<p>When JavaScript comes across a number it recognises (evaluates) as a number. A <em>statement</em> in JavaScript typically ends with a semi-colon:</p>
+<pre><code class="lang-JavaScript">3;
+</code></pre>
+<p>This statement is a valid JavaScript program. JavaScript will:</p>
+<ul>
+<li>evaluate the number 3</li>
+<li>then forget it (more on this later)</li>
+</ul>
+<hr>
+<h2 id="types">Types</h2>
+<p>Values are categorised by <em>type</em> in JavaScript. The ECMAScript version 6
+specifcations defines the following types:</p>
+<ul>
+<li>Number (e.g. 1 or 1.235)</li>
+<li>Strings (e.g &quot;Hello&quot; or &#39;Bob&#39;)</li>
+<li>Boolean (True or False)</li>
+<li>Object</li>
+<li>Undefined</li>
+<li>Null</li>
+<li>Symbol</li>
+</ul>
+<p>A Function is a special kind of callable Object.</p>
+<p>An Array is also an object, with special syntax. </p>
+<p>???
+We will cover the basic usage for Number, Strings, Boolean and Object</p>
+<p>In programming the definition of &quot;nothing&quot; can sometimes be challenging. 
+In Javascript two types Undefined and Null are two ways of defining &quot;nothingness&quot;
+We will see these later.</p>
+<p>We won&#39;t be covering symbol here (new in ES6).
+Interesting dicussion on Symbol:</p>
+<p><a href="https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/">https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/</a></p>
+<hr>
+<h2 id="operators">Operators</h2>
+<p>JavaScript has certain pre-defined operators, for example <code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>,<code>%</code>,<code>typeof</code></p>
+<p>The <code>+</code> operator can be used to add two numbers together.</p>
+<pre><code class="lang-JavaScript">3 + 4;
+</code></pre>
+<p>JavaScript will evaluate this to 7.</p>
+<hr>
+<h2 id="strings">Strings</h2>
+<p>Values are recognised as Strings when surronded by quotes, for example;</p>
+<pre><code class="lang-JavaScript">&quot;Hello&quot;;
+</code></pre>
+<p>The <code>+</code> operator works with Strings but concatenates Strings, creating a new String;</p>
+<pre><code class="lang-JavaScript">&quot;Hello &quot; + &quot;World&quot;;
+</code></pre>
+<hr>
+<h1 id="trying-javascript">Trying JavaScript</h1>
+<p>For the next few exercises we can use the following link to try out basic JavaScript</p>
+<ul>
+<li><a href="https://thimbleprojects.org/melw/123664/">Open this link in a new Window</a></li>
+</ul>
+<hr>
+<p>class: exercise</p>
+<h2 id="evaluate-numbers">Evaluate Numbers</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">3
+</code></pre>
+<pre><code class="lang-JavaScript">3+4
+</code></pre>
+<pre><code class="lang-JavaScript">3*4
+</code></pre>
+<pre><code class="lang-JavaScript">6 / 2
+</code></pre>
+<pre><code class="lang-JavaScript">6 / 0
+</code></pre>
+<pre><code class="lang-JavaScript">0.1 + 0.2
+</code></pre>
+<hr>
+<p>class: exercise</p>
+<h2 id="evaluate-strings">Evaluate Strings</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">hello;
+</code></pre>
+<pre><code class="lang-JavaScript">&quot;Hello&quot;;
+</code></pre>
+<pre><code class="lang-JavaScript">&#39;Hello&#39;;
+</code></pre>
+<pre><code class="lang-JavaScript">&quot;Hello &quot; + &quot;World&quot;;
+</code></pre>
+<hr>
+<h2 id="string-methods">String methods</h2>
+<p>JavaScript allows us to execute methods on Strings to manipulate them</p>
+<p>see: <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">w3Schools String Reference</a></p>
+<p>for example: </p>
+<pre><code class="lang-JavaScript">&quot;hello&quot;.toUpperCase()
+</code></pre>
+<p>converts &quot;hello&quot; to &quot;HELLO&quot;.</p>
+<hr>
+<p>class: exercise</p>
+<h2 id="string-methods">String Methods</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">&quot;HELLO&quot;.toLowerCase();
+</code></pre>
+<pre><code class="lang-JavaScript">&quot;Boolean&quot;.substring(0,3);
+</code></pre>
+<pre><code class="lang-JavaScript">&#39;#&#39;.repeat(10);
+</code></pre>
+<hr>
+<h2 id="variables">Variables</h2>
+<p>Variables allow the program to remember and access variables. To do this we use the <code>var</code> keyword</p>
+<pre><code class="lang-JavaScript">var name;
+</code></pre>
+<p>We can assign a value to a variable:</p>
+<pre><code class="lang-JavaScript">name = &quot;Bob&quot;;
+</code></pre>
+<p>We can also declare a variable and assign it a value in one statement:</p>
+<pre><code class="lang-JavaScript">var name = &quot;Bob&quot;;
+</code></pre>
+<p>Note that the &#39;=&#39; is an assignment - not a comparison.</p>
+<p>???
+Point to note: Its advisible to consider this as two operations - declaration and initialise. 
+This is becase that var declaratons are processed first, then the initialise</p>
+<p>Later on &quot;hoisting&quot; of variables are discussed</p>
+<hr>
+<h2 id="variables-let-">Variables (let)</h2>
+<p>A new way to define variables is to use <em>let</em></p>
+<pre><code class="lang-JavaScript">let name = &quot;Bob&quot;;
+name;
+</code></pre>
+<p>More on this later ...</p>
+<hr>
+<p>class: exercise</p>
+<h2 id="variables-and-operators">Variables and Operators</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">var name = &quot;Bob&quot;;
+name;
+</code></pre>
+<pre><code class="lang-JavaScript">var name = &quot;Bob &quot;; 
+&#39;Hello &#39; + name;
+</code></pre>
+<pre><code class="lang-JavaScript">let name = &quot;Bob &quot;; 
+&#39;Hello &#39; + name;
+</code></pre>
+<hr>
+<p>class: exercise</p>
+<h2 id="variables-and-operators">Variables and Operators</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">var x = 3;
+x * x;
+</code></pre>
+<pre><code class="lang-JavaScript">var x = 1;
+x = x + 1;
+</code></pre>
+<hr>
+<h2 id="increment-and-decrement-operators">Increment and Decrement Operators</h2>
+<p>To increment a variable you can use a &quot;short-cut&quot;</p>
+<pre><code class="lang-JavaScript">x++
+</code></pre>
+<p>which may be used to replace</p>
+<pre><code class="lang-JavaScript">x = x + 1
+</code></pre>
+<p>However be careful because this operator first returns the value of x then increments it.
+For this tutorial we will not use it, but you will see it in examples around the web.</p>
+<p>see: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Increment_(">MDN Increment Operator</a>)</p>
+<hr>
+<h2 id="arrays">Arrays</h2>
+<p>An array is a type of object that can hold multiple values. JavaScript denotes an array 
+using square brackets. For example:</p>
+<pre><code class="lang-JavaScript">var names = [];  /* Empty Array*/
+</code></pre>
+<pre><code class="lang-JavaScript">var names = [&#39;Billy&#39;,&#39;Bob&#39;,&#39;Bertie&#39;]; 
+names[0];
+</code></pre>
+<p>To get the first element of the array you specify the variable with an index. <em>The first value in an array has an index of 0</em></p>
+<p>JavaScript will evaluate the above statement to &#39;Billy&#39;</p>
+<p>Note: The &quot;/* Empty Array*/&quot; is a comment in JavaScript code.</p>
+<hr>
+<p>class: exercise</p>
+<h2 id="arrays">Arrays</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">var names = [];
+names.length;
+</code></pre>
+<pre><code class="lang-JavaScript">var names = [&#39;Billy&#39;, &#39;Bob&#39;, &#39;Bertie&#39;];
+names.length;
+</code></pre>
+<pre><code class="lang-JavaScript">var names = [&#39;Billy&#39;, &#39;Bob&#39;, &#39;Bertie&#39;];
+names[0];
+</code></pre>
+<pre><code class="lang-JavaScript">var names = [&#39;Billy&#39;, &#39;Bob&#39;, &#39;Bertie&#39;];
+names[2];
+</code></pre>
+<pre><code class="lang-JavaScript">var names = [&#39;Billy&#39;, &#39;Bob&#39;, &#39;Bertie&#39;];
+names[3];
+</code></pre>
+<hr>
+<h2 id="console">Console</h2>
+<p>A convenient way to output values when testing or developing simple
+algorithms is to print the results out on the console. Try this:</p>
+<pre><code class="lang-JavaScript">
+console.log(&quot;Hello World&quot;);
+</code></pre>
+<p>In our editor we are using a &quot;fake&quot; console.
+Later we will see an example of an actual console.</p>
+<p>Note that the console output is different from the evaluation result.</p>
+<hr>
+<h2 id="for-loop">For Loop</h2>
+<p>We can perform something many times by using a loop construct. </p>
+<pre><code class="lang-JavaScript">for (let i = 0; i &lt; 10; i = i+1) {
+    /* Do Something */
+}
+</code></pre>
+<p>The <em>for</em> loop construct can be read:</p>
+<ul>
+<li>Given a counter <em>i</em> that starts at 0.</li>
+<li>If the counter <em>i</em> is less than 10</li>
+<li>Do something</li>
+<li>Add 1 to the counter <em>i</em>.</li>
+</ul>
+<p>see: <a href="https://www.w3schools.com/js/js_loop_for.asp">https://www.w3schools.com/js/js_loop_for.asp</a></p>
+<hr>
+<h2 id="for-loop-example">For Loop - Example</h2>
+<p>Print out the numbers between 0 to 9.</p>
+<pre><code class="lang-JavaScript">for (let i = 0; i&lt;10; i=i+1) {
+    console.log(i);
+}
+</code></pre>
+<hr>
+<h2 id="exercises">Exercises</h2>
+<p>Using a for loop:</p>
+<ol>
+<li>Print out numbers from 1 to 10</li>
+<li>Print out numbers from -1 to -10</li>
+<li>Print out numbers from 2 to 20 that are
+divisible by 2.</li>
+<li>Print out all the elements in the array
+[&quot;Billy&quot;,&quot;Bob&quot;,&quot;Bertie&quot;]</li>
+</ol>
+<hr>
+<h2 id="for-loop">For Loop</h2>
+<p>Prefably use <strong>let</strong> with a for loop</p>
+<pre><code class="lang-JavaScript">for (let i = 0; i&lt;10; i=i+1) {
+    console.log(i);
+}
+</code></pre>
+<p>alternatively using the var keyword ...</p>
+<pre><code class="lang-JavaScript">
+var i;
+
+for (i = 0; i&lt;10; i=i+1) {
+    console.log(i);
+}
+</code></pre>
+<p>But why the difference ? ....</p>
+<hr>
+<h2 id="var-vs-let-scope-">var vs let (Scope)</h2>
+<p>Oh dear. Here we introduce a &quot;Gotcha&quot;</p>
+<p><strong><em>Variable declations are processed before any other instruction.</em></strong> </p>
+<p><strong><em>Variable assignment is executed in place</em></strong></p>
+<p><strong><em>To avoid confusion always declare variables using var first</em></strong></p>
+<p>This depends on where the variable is defined (Scope) and will be covered later.</p>
+<p>For more info see <a href="https://www.w3schools.com/js/js_hoisting.asp">https://www.w3schools.com/js/js_hoisting.asp</a></p>
+<p><strong>let allows you define a variable to the <em>block</em> it belongs.</strong></p>
+<hr>
+<h2 id="example-histogram">Example, Histogram</h2>
+<p>To examine some of the concepts we have covered we will create a simple &#39;program&#39;
+that given an array of numbers, e.g 1,2,4,8,16 will print the numbers out
+horizontally in graphically, e.g:</p>
+<pre><code>#
+##
+####
+########
+#################
+</code></pre><hr>
+<p>class: center, middle</p>
+<h2 id="demo">Demo</h2>
+<hr>
+<h2 id="example-histogram">Example, Histogram</h2>
+<p>Given a array of numbers display a left to right histogram</p>
+<pre><code class="lang-JavaScript">var data = [1,24,4,8,18];  /* can use let or var */
+
+for (let i=0 ; i &lt; data.length; i = i+1) {
+    console.log(&quot;#&quot;.repeat(data[i]));
+}
+</code></pre>
+<hr>
+<h2 id="example-histogram-alternative-">Example, Histogram (alternative)</h2>
+<p>Given a array of numbers display a left to right histogram</p>
+<pre><code class="lang-JavaScript">var data = [1,24,4,8,18];
+
+for (let i=0 ; i &lt; data.length; i = i+1) {
+    let count = data[i]
+    let graphString = &#39;#&#39;.repeat(count)
+    console.log(graphString);
+}
+</code></pre>
+<hr>
+<h2 id="example-histogram-alternative-using-var-">Example, Histogram (alternative using var)</h2>
+<pre><code class="lang-JavaScript">var data = [1,24,4,8,18];
+var count;
+var graphString;
+var i;
+
+for (i=0 ; i &lt; data.length; i = i+1) {
+    count = data[i]
+    graphString = &#39;#&#39;.repeat(count)
+    console.log(graphString);
+}
+</code></pre>
+<hr>
+<h2 id="functions">Functions</h2>
+<p>Functions are incredlibly powerful, especially in JavaScript. One on the most important aspect of functions in JavaScript is that they are assigned to a variable.</p>
+<pre><code class="lang-JavaScript">var squared = function(x) { return x * x };
+</code></pre>
+<p>The statement above defines a function that takes an argument <code>x</code>. When it is executed the function will return the square of x.</p>
+<p>We can get JavaScript to evaluate the function by:</p>
+<pre><code class="lang-JavaScript">squared(2);
+</code></pre>
+<hr>
+<p>class: exercise</p>
+<h2 id="functions">Functions</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">var hello = function() { return &quot;Hello&quot;};
+hello;
+</code></pre>
+<pre><code class="lang-JavaScript">var hello = function() { return &quot;Hello&quot;};
+hello();
+</code></pre>
+<pre><code class="lang-JavaScript">var hello = function(name) { return &quot;Hello &quot; + name } ;
+hello(&quot;Bob&quot;);
+</code></pre>
+<hr>
+<h2 id="function-declaration-alternative-">Function Declaration (alternative)</h2>
+<p>Another shorthand way of declaring a function is:</p>
+<pre><code class="lang-JavaScript">function hello(name) { return &quot;Hello &quot; + name; }
+</code></pre>
+<p>Which is (nearly) equivalent to </p>
+<pre><code class="lang-JavaScript">var hello = function(name) { return &quot;Hello &quot; + name; }
+</code></pre>
+<p>(There is a difference, on where the function is effectively declared).</p>
+<hr>
+<h2 id="function-declaration-new-">Function declaration (new)</h2>
+<p>There is also a new way to create functions using the &quot;arrow syntax&quot;</p>
+<pre><code class="lang-JavaScript">var hello = (name) =&gt; { return &quot;Hello &quot; + name;}
+</code></pre>
+<hr>
+<h2 id="objects-first-look-">Objects (first look)</h2>
+<p>JavaScript objects can act as a container for values (including arrays, and <em>functions</em>). An  object can just about represent anything.</p>
+<p>An object has properties (variables within an object) that hold values.</p>
+<p>Consider this:</p>
+<pre><code class="lang-JavaScript">var person = {};  /* Empty Object */
+</code></pre>
+<pre><code class="lang-JavaScript">var person = { name: &quot;Trinity&quot;}
+</code></pre>
+<p>I can access the properties of the object, for example.</p>
+<pre><code class="lang-JavaScript">person.name
+</code></pre>
+<hr>
+<h2 id="objects-first-look-">Objects (first look)</h2>
+<p>Alternatively the property can be accessed by using the following syntax</p>
+<pre><code class="lang-JavaScript">person[&quot;name&quot;]
+</code></pre>
+<hr>
+<h2 id="setting-object-properties">Setting Object Properties</h2>
+<p>In JavaScript I can also create and set properties like this:</p>
+<pre><code class="lang-JavaScript">var person = {};
+person.name = &quot;Morpheus&quot;;
+</code></pre>
+<p>or</p>
+<pre><code class="lang-JavaScript">var person = {};
+person[&quot;name&quot;] = &quot;Morpheus&quot;;
+</code></pre>
+<hr>
+<p>class: exercise</p>
+<h2 id="objects">Objects</h2>
+<p>Type in the following (seperately) and click &quot;Evaluate&quot;</p>
+<pre><code class="lang-JavaScript">var person = {&quot;name&quot; : &quot;Bob&quot;, &quot;age&quot; : 21};
+person.name;
+</code></pre>
+<pre><code class="lang-JavaScript">var person = {name : &quot;Bob&quot;, age : 21};
+person[&quot;age&quot;];
+</code></pre>
+<pre><code class="lang-JavaScript">var telephoneNumbers = {
+&quot;john&quot;: &quot;11111&quot;,
+&quot;frank&quot; : &quot;2222&quot;,
+&quot;bob&quot; : &quot;3333&quot;
+};
+
+telephoneNumbers.bob;
+</code></pre>
+<hr>
+<h2 id="objects-first-look-">Objects(first look)</h2>
+<p>Objects are far more powerful than we have shown here.</p>
+<p>We have created objects using the <em>object literal</em> syntax.</p>
+<p>There are many different ways to create a use objects.</p>
+<hr>
+<h2 id="comparisons">Comparisons</h2>
+<p>We can compare two values using comparison operators, for example:</p>
+<pre><code class="lang-JavaScript">1 == 1;     /* Equals - evaluates to true */
+1 == 2;     /* Equals - evaluates to false */
+1 != 2;     /* Not Equal - evaluates to true */
+1 &lt; 2;      /* Less than - evaluates true */
+1 &gt;= 2;     /* Greater or equal to ... */
+</code></pre>
+<p>for more information see:</p>
+<p><a href="https://www.w3schools.com/js/js_comparisons.asp">w3Schools comparison tutorial</a></p>
+<hr>
+<h2 id="code-blocks">Code Blocks</h2>
+<p>We can put related statements of code into a code block, using braces &quot;{&quot; and &quot;}&quot;</p>
+<p>for example:</p>
+<pre><code class="lang-JavaScript">var name = &quot;Bob&quot; 
+
+{
+&quot;Hello &quot; + name; 
+}
+</code></pre>
+<p>This is not very useful, but they are used in other statements, including the creation of functions as seen before.</p>
+<hr>
+<h2 id="conditional-statements">Conditional Statements</h2>
+<p>We can execute statements depending if a a condition is true using an 
+~if~ statement.</p>
+<p>The If statement requires a Boolean followed by code block that is evaluated if the condition is true.</p>
+<pre><code class="lang-JavaScript">if (1 == 1) { &quot;Yes&quot; };
+</code></pre>
+<pre><code class="lang-JavaScript">if (1 == 2) { &quot;Yes&quot; };
+</code></pre>
+<p>Note, that if the condition is false it evaluates to &quot;undefined&quot;</p>
+<p>Alterantively, the else keyword can be to evaluate code when the condition is False.</p>
+<pre><code class="lang-JavaScript">if (1==1) {&quot;Equal&quot;} else { &quot;Not Equal&quot;};
+</code></pre>
+<hr>
+<p>class: center, middle, inverse</p>
+<h1 id="javascript-in-the-browser">Javascript in the Browser</h1>
+<hr>
+<h2 id="javascript-in-the-browser">Javascript in the Browser</h2>
+<p>For this session we will explore the browser environment to try and get a feel for how 
+web pages can be manipulated.</p>
+<hr>
+<h2 id="environment">Environment</h2>
+<p>When a JavaScript program starts, the program is configured or provided with an envronment. For example an object is created that allows a program to output data (to the console):</p>
+<pre><code class="lang-JavaScript">console.log(&quot;Hello World&quot;)
+</code></pre>
+<hr>
+<p>class: exercise</p>
+<h2 id="the-web-browser-console">The Web Browser Console</h2>
+<p>The Web Browser console and associated tools are a very useful feature.</p>
+<p>Let&#39;s take a look ...</p>
+<hr>
+<p>class: exercise</p>
+<h2 id="the-dom">The DOM</h2>
+<p>As mentioned before, the Web Browser loads a web page into a data structure (DOM) as part of its <em>environment</em>.</p>
+<p>Browser tools provide an inspector, that let you interrogate the DOM.</p>
+<p>Let&#39;s take a look ...</p>
+<hr>
+<h2 id="getting-a-dom-object-by-id">Getting a DOM Object by ID</h2>
+<p>You can get a DOM object by its CSS selector. For example to get the first
+paragrpah:</p>
+<pre><code class="lang-JavaScript">var name = document.querySelector(&#39;p&#39;);
+</code></pre>
+<hr>
+<h2 id="setting-dom-content">Setting DOM Content</h2>
+<p>You can set the value of a DOM object, for example</p>
+<pre><code class="lang-JavaScript">name.innerHTML = &quot;&lt;p&gt;Bob&lt;/p&gt;&quot;;
+</code></pre>
+<p>or </p>
+<pre><code class="lang-JavaScript">document.querySelector(&#39;p&#39;).innerHTML = &#39;Bob&#39;;
+</code></pre>
+<hr>
+<h2 id="the-window-object">The Window Object</h2>
+<p>The Window Object of the DOM provides a number of objects and methods to the JavaScript environment, for example:</p>
+<pre><code class="lang-JavaScript">window.setInterval(myFunc,3000);
+</code></pre>
+<p>Properties and methods are exported to the global scope, so you can also use:</p>
+<pre><code class="lang-JavaScript">setInterval(myFunc,3000);
+</code></pre>
+<p>Note that the function myFunc is being passed as a value.</p>
+<p>We will see this soon ...</p>
+<hr>
+<h2 id="example-write-several-messages-to-the-console-">Example, Write Several Messages to the Console.</h2>
+<p>As an example, say we want to messages
+on a web page, changing the message every 3 seconds. </p>
+<p>To achieve this, I have a few examples that write messages to the console.
+We can then change this to execute in a web page.</p>
+<p>The following example is intended to achieve the following</p>
+<ul>
+<li>Store an number of messages in an array.</li>
+<li>Provide a function that returns a message (the next message in the array).</li>
+<li>Log the message to the console.</li>
+</ul>
+<hr>
+<h2 id="display-messages">Display Messages</h2>
+<pre><code class="lang-JavaScript">let messages = [&#39;Hello&#39;,&#39;Good Day&#39;, &#39;Good Afternoon&#39;, &#39;Good Evening&#39;];
+let index = 0;
+
+let getMessage = function () {
+    let nextMessage =  messages[index];
+    index = index + 1;
+    return nextMessage;
+}
+
+for (let i = 0; i&lt;10; i = i+1) {
+    console.log(getMessage());
+}
+</code></pre>
+<hr>
+<h2 id="display-message-a-problem-">Display Message, a problem ?</h2>
+<p>There is a problem with the example, once all messages are printed
+the index is still incremented and therefore returns and &#39;undefined&#39;</p>
+<p>One way to do this, is to reset the index so it goes back to the start
+of the messages. We now always return a message.</p>
+<hr>
+<h2 id="display-messages-improved-">Display Messages (Improved)</h2>
+<pre><code class="lang-JavaScript">let messages = [&quot;Good Morning&quot;, &quot;Good Evening&quot;, 
+&quot;Good Afternoon&quot;, &quot;Good Night&quot;];
+let index = 0;
+
+let getMessage = function () {
+let nextMessage =  messages[index];
+index = index + 1;
+if (index &gt;= messages.length) {
+    index = 0;
+}
+return nextMessage;
+}
+
+for (let i = 0; i&lt;10; i = i+1) {
+      console.log(getMessage());
+}
+</code></pre>
+<hr>
+<h2 id="display-messages-on-a-web-page">Display Messages on a Web Page</h2>
+<p>To display messages on a web page we can include JavaScript within a <code>&lt;script&gt;</code> element.</p>
+<p>JavaScript provides a function <code>setInterval</code> that allows us to call a function at a time interval.</p>
+<p>The function can get a message from the message array and display the message by using the DOM.</p>
+<hr>
+<h2 id="display-messages-on-a-web-pages">Display Messages on a  Web Pages</h2>
+<pre><code class="lang-HTML">&lt;body&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;script&gt;
+let messages = [&quot;Good Morning&quot;, &quot;Good Evening&quot;, 
+&quot;Good Afternoon&quot;, &quot;Good Night&quot;];
+let i = 0;
+let displayMessage = function() {
+    document.querySelector(&#39;p&#39;).innerHTML = messages[i];
+    i = i + 1;
+    if (i &gt;= messages.length) {
+        i = 0;
+    }
+}
+displayMessage();
+setInterval(displayMessage,3000);
+&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+</article></body></html>

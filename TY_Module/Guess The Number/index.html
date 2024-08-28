@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Guess The Number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="style.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Guess the Number</h1>
+    </header>
+    
+    <table id="guessTable">
+      <tr>
+        <td>
+          <h2>Pick a Number between 1 and 100</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input id="userGuess" type="text" size="1">
+          <input type="button" value="Guess" onclick="checkGuess()">
+          <br/>
+          <br/>
+          <input id="feedback" type="text" size="25">
+        </td>
+      </tr>
+    </table>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
